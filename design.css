@@ -8,16 +8,23 @@ div{
  overflow: hidden;
 }
 
-#btn{
-    background: aquamarine;
-    padding: 5px;
-    font-family: 'Ranchers', cursive;
-    letter-spacing: 3px;
-    border: 2px solid red ;
+#btn1{
+    /* background: aquamarine; */
+    /* padding: 5px; */
+    /* font-family: 'Ranchers', cursive;
+    letter-spacing: 3px; */
+    /* border: 2px solid red ;
     border-radius: 10px;
-    outline: none;
+    outline: none; */
     margin: auto;
     display: block;
     margin-top: 34vh;
+    cursor: pointer;
+}
+
+#btn2{
+    margin: auto;
+    display: block;
+    margin-top: 20px ;
     cursor: pointer;
 }

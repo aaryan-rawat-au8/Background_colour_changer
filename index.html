@@ -11,18 +11,32 @@
       href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
   </head>
   <body>
     <div id="main">
-      <button id="btn" onclick="changeColor()">Click Me !!!</button>
+      <button class="btn btn-outline-dark" id="btn1" onclick="changeColor()">
+        Click Me !!!
+      </button>
+      <button class="btn btn-outline-dark" id="btn2" onclick="stopChangeColor()">
+        Stop Me !!!
+      </button>
     </div>
   </body>
   <script>
     const changeColor = () => {
-        var x = Math.floor(Math.random() * 5);
-        console.log(x);
+      var x = Math.floor(Math.random() * 5);
+      // console.log(x);
       var colore = ["red", "yellow", "blue", "black", "green", "pink"];
-      document.getElementById("main").style.background=colore[x];
+      document.getElementById("main").style.background = colore[x];
+      a=setTimeout(changeColor, 200);
     };
+    const stopChangeColor=()=>{
+      console.log("hi");
+      clearTimeout(a);
+    }
   </script>
 </html>
